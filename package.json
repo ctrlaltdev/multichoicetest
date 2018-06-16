@@ -1,0 +1,26 @@
+{
+  "name": "multichoicetest",
+  "version": "1.0.0",
+  "description": "Generate multiple choice test.",
+  "main": "src/multichoicetest.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ctrlaltdev/multichoicetest.git"
+  },
+  "keywords": [
+    "multiple",
+    "choice",
+    "question",
+    "test"
+  ],
+  "authors": [
+    "Yorick <yorick@ctrlaltdev.xyz>"
+  ],
+  "bugs": {
+    "url": "https://github.com/ctrlaltdev/multichoicetest/issues"
+  },
+  "homepage": "https://github.com/ctrlaltdev/multichoicetest#README",
+  "dependencies": {
+    "haikunator": "^2.0.0"
+  }
+}
