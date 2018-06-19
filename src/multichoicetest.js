@@ -176,27 +176,28 @@ class multiChoice {
    * @memberof multiChoice
    */
   printMsg(score, msgs = this.messages) {
-    msgs.map((msg) => {
+    for (let i = 0 ; i < msgs.length ; i++) {
 
-      if (score >= msg.scoreThresold) {
+      if (score >= msgs[i].scoreThresold) {
         let scoreMsg = document.createElement('div')
         scoreMsg.classList.add('scoreMsg')
 
         let msgTitle = document.createElement('p')
         msgTitle.classList.add('msgTitle')
-        let msgTitleTxt = document.createTextNode(msg.title)
+        let msgTitleTxt = document.createTextNode(msgs[i].title)
         msgTitle.appendChild(msgTitleTxt)
         scoreMsg.appendChild(msgTitle)
 
         let msgContent = document.createElement('p')
-        let msgContentTxt = document.createTextNode(msg.message)
+        let msgContentTxt = document.createTextNode(msgs[i].message)
         msgContent.appendChild(msgContentTxt)
         scoreMsg.appendChild(msgContent)
 
         this.domElem.appendChild(scoreMsg)
-      }
+        break
+      } 
 
-    })
+    }
   }
 
   /**
